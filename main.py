@@ -3,7 +3,7 @@
 # 2. Go to your email provider and make it allow less secure apps.
 # 3. Update the SMTP ADDRESS to match your email provider.
 # 4. Update birthdays.csv to contain today's month and day.
-# See the solution video in the 100 Days of Python Course for explainations.
+# And just like that, you can save everyone's birthdays in a CSV file and automatically email them wishes—instant bonus points!
 
 
 from datetime import datetime
@@ -12,7 +12,6 @@ import random
 import smtplib
 import os
 
-# import os and use it to get the Github repository secrets
 MY_EMAIL = os.environ.get("MY_EMAIL")
 MY_PASSWORD = os.environ.get("MY_PASSWORD")
 
@@ -20,7 +19,7 @@ today = datetime.now()
 today_tuple = (today.month, today.day)
 
 data = pandas.read_csv("birthdays.csv")
-birthdays_dict = {(data_row["month"], data_row["day"])                  : data_row for (index, data_row) in data.iterrows()}
+birthdays_dict = {(data_row["month"], data_row["day"]): data_row for (index, data_row) in data.iterrows()}
 if today_tuple in birthdays_dict:
     birthday_person = birthdays_dict[today_tuple]
     file_path = f"letter_templates/letter_{random.randint(1, 3)}.txt"
