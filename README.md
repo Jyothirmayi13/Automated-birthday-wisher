@@ -1,37 +1,3 @@
-# Run Your Python Script Daily (Free!)
-
-This template runs your Python script automatically using GitHub Actions.
-
-**No server needed. No credit card. Completely free.**
-
----
-
-## Setup Instructions
-
-### Step 1: Create Your Own Copy
-
-**<img width="1529" height="392" alt="image" src="https://github.com/user-attachments/assets/ad18c370-5d54-4cf0-aebf-4826c3928281" />
-**
-
-- Click the **"fork"** button at the top of this page
-
-You now have your own copy to edit!
-
-### Step 2: Enable the Github Action Workflows
-
-The workflows I created for you will be disabled automatically on your copy. You have to enable them. 
-
-- Click the green button **"I understand my workflows etc etc"**
- 
-<img width="834" height="349" alt="image" src="https://github.com/user-attachments/assets/296570ac-3800-40d6-9585-d501538cfc8c" />
-
-Obviously one should always (!) check before running random stuff on the internet ;) 
-And of course, once checked, the workflows need to be enabled:
-
-<img width="1547" height="895" alt="image" src="https://github.com/user-attachments/assets/d7fbd3c7-0215-44f8-bba7-8c04c3447b5a" />
-
-
----
 
 ### Step 3: Add Your Code
 
